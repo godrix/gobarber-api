@@ -14,6 +14,7 @@
       "./src/@types"
     ],
     "esModuleInterop": true,
+    "strictPropertyInitialization": false,
     "resolveJsonModule": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
@@ -21,7 +22,16 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@controllers/*":["./src/controllers/*"]
+      "@routes/*":["./src/routes/*"],
+      "@models/*":["./src/models/*"],
+      "@database/*":["./src/database/*"],
+      "@services/*":["./src/services/*"],
+      "@repositories/*":["./src/repositories/*"],
+      "@interfaces/*":["./src/interfaces/*"],
+      "@configs/*":["./src/configs/*"],
+      "@middlewares/*":["./src/middlewares/*"],
+      "@types/*":["./src/@types/*"],
+      "@errors/*":["./src/errors/*"]
     }
   }
 }

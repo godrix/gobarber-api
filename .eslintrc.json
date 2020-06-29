@@ -16,7 +16,7 @@
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 11,
+    "ecmaVersion": 2018,
     "sourceType": "module"
   },
   "plugins": [
@@ -33,12 +33,6 @@
     "no-console": "off",
     "import/prefer-default-export": "off",
     "@typescript-eslint/explicit-function-return-type": ["off"],
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      {
-        "argsIgnorePattern": "_"
-      }
-    ],
     "no-useless-constructor": "off",
     "@typescript-eslint/naming-convention": [ 
       "error", 
@@ -55,16 +49,6 @@
       "allowArgumentsExplicitlyTypedAsAny": true
     }],
     "no-underscore-dangle": "off",
-    "@typescript-eslint/camelcase": "off",
-    "prettier/prettier": "error",
-    "class-methods-use-this": "off",
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "ts": "never"
-      }
-    ],
     "import-helpers/order-imports": [
       "warn",
       {
@@ -76,6 +60,19 @@
           ["parent", "sibling", "index"]
         ],
         "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ],
+    "prettier/prettier": "error",
+    "class-methods-use-this": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-unused-vars": ["error", {
+      "argsIgnorePattern": "_"
+    }],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never"
       }
     ]
   },
